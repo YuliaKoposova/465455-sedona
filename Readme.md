@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юля Копосова](https://up.htmlacademy.ru/htmlcss/20/user/465455).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Попова](https://htmlacademy.ru/profile/olga_popova)
 
 ---
 
