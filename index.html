@@ -97,7 +97,27 @@
 
     <section class="modal modal-input">
       <h2 class="visually-hidden">Найти гостиницы</h2>
-      <!--Форма-->
+      <form class="hotels-searching-date" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="arrival-date">Дата въезда:</label>
+          <input type="date" name="arrival-date" id="arrival-date">
+          <img src="img/calendar.svg" width="20px" height="20px">
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда:</label>
+          <input type="date" name="departure-date" id="departure-date">
+          <img src="img/calendar.svg" width="20px" height="20px">
+        </p>
+        <p>
+          <label for="adult-amount">Взрослые:</label>
+          <input type="number" name="adult-amount" id="adult-amount" min="0" step="1">
+        </p>
+        <p>
+          <label for="children-amount">Дети:</label>
+          <input type="number" name="children-amount" id="children-amount" min="0" step="1">
+        </p>
+        <input type="submit" name="searching-date" value="Найти">
+      </form>
     </section>
 
   </body>

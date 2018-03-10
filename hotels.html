@@ -22,7 +22,32 @@
   	<main class="container">
       <h1 class="visually-hidden">Поиск отелей</h1>
       <section class="request">
-        <!--Форма-->
+        <form class="hotels-searching-detailed">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" id="pool" name="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <label for="wi-fi">WI-FI</label>
+          </fieldset>
+          <fieldset class="type-of-accomodation">
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="hotel" name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" id="motel" name="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" id="apartment" name="apartment" checked>
+            <label for="apartment">Апартаменты</label>
+          </fieldset>
+          <fieldset class="day-value-form">
+            <label for="day-value">Стоимость в сутки (Р):</label>
+            <output name="day-value-output"></output>
+            <input type="range" multiple name="day-value" id="day-value">
+            <input type="submit" name="searching-detailed" value="Показать">
+          </fieldset>
+        </form>
       </section>
       
       <section class="response">
