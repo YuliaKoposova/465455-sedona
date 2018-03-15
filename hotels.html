@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -19,7 +22,7 @@
   		</nav>
   	</header>
 
-  	<main class="container">
+  	<main class="hotels-container">
       <h1 class="visually-hidden">Поиск отелей</h1>
       <section class="request">
         <form class="hotels-searching-detailed" method="get" action="https://echo.htmlacademy.ru">
@@ -58,9 +61,9 @@
       
       <section class="response">
         <header class="response-header">
-          <b>Найдено:</b>
+          <b>Найдено: 3</b>
           <p>Сортировка:</p>
-          <a href="#">по цене</a>
+          <a href="#" class="chosen">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по рейтингу</a>
           <a href="#">по возрастанию</a>
@@ -69,18 +72,18 @@
         <ul class="response-main">
           <li>
             <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
-            <h2>Amara Resort &amp; Spa</h2>
-            <span class="rating-stars">****</span>
+            <h2><a class="variant" href=""> Amara Resort &amp; Spa</a></h2>
+            <span class="rating-stars"></span>
             <p>Гостиница</p>
             <span>от 4000 Р.</span>
             <a class="detailed" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
-            <p>Рейтинг: 8,5</p>
+            <p class="rating">Рейтинг: 8,5</p>
           </li>
           <li>
             <img src="img/desert.jpg"  width="135" height="90" alt="Desert Quail Inn">
-            <h2>Desert Quail Inn</h2>
-            <span class="rating-stars">***</span>
+            <h2><a class="variant" href="">Desert Quail Inn</a></h2>
+            <span class="rating-stars"></span>
             <p>Мотель</p>
             <span>от 3000 Р.</span>
             <a class="detailed" href="#">Подробнее</a>
@@ -89,8 +92,8 @@
           </li>
           <li>
             <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-            <h2>Villas at Poco Diablo</h2>
-            <span class="rating-stars">**</span>
+            <h2><a class="variant" href="">Villas at Poco Diablo</a></h2>
+            <span class="rating-stars"></span>
             <p>Апартаменты</p>
             <span>от 2000 Р.</span>
             <a class="detailed" href="#">Подробнее</a>
