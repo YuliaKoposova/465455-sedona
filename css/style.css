@@ -379,3 +379,46 @@ footer {
 .calendar:active {
 	fill: #81b3d2;
 }
+
+/*Сетки*/
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-points-of-menu {
+	display: flex;
+}
+
+.features-list {
+	display: flex;
+	margin-top: 56px;
+}
+
+footer {
+	display: flex;
+	padding: 37px 73px;
+}
+
+.hashtag {
+	width: 240px;
+}
+
+.footer-social {
+	width: 400px;
+	margin-left: 88px;
+}
+
+.footer-copyright {
+	width: 241px;
+	margin-left: auto;
+}
+
+.main-container-img {
+	margin-bottom: 61px;
+}
+/**/
+
+/*Helper*/
+
+/**/
