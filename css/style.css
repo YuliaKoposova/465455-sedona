@@ -18,6 +18,11 @@ img {
 	max-width: 100%;
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .main-header {
 	background-color: #ffffff;
 }
@@ -30,6 +35,10 @@ img {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.main-points-of-menu {
+	display: flex;
 }
 
 .main-points-of-menu a:hover {
@@ -45,6 +54,7 @@ img {
 } 
 
 .main-container-img {
+	margin-bottom: 61px;
 	width: 1200px;
 	height: 564px;
 	background-size: 1200px 57px, cover;
@@ -52,6 +62,11 @@ img {
 	background-image: url("../img/shape-for-background.png"), url("../img/background.jpg");
 	background-repeat: no-repeat, no-repeat;
 	background-position: bottom center, top center;
+}
+
+.main-container-img img {
+	padding-top: 131px;
+	padding-left: 371px;
 }
 
 .general {
@@ -104,6 +119,9 @@ img {
 }
 
 .features-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 56px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -151,6 +169,10 @@ img {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
+}
+
+.hotels-searching-detailed {
+	display: flex;
 }
 
 .response-header b {
@@ -213,6 +235,10 @@ img {
 
 .sort:active {
 	color: #000;
+}
+
+.response-main {
+	list-style: none;
 }
 
 .response-main h2 {
@@ -294,6 +320,8 @@ img {
 }
 
 footer {
+	display: flex;
+	padding: 37px 73px;
 	background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -301,9 +329,12 @@ footer {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
+	width: 240px;
 }
 
 .footer-social {
+	width: 400px;
+	margin-left: 88px;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -340,6 +371,11 @@ footer {
 
 .footer-social li:active {
 	background-color: #5496bd;
+}
+
+.footer-copyright {
+	width: 241px;
+	margin-left: auto;
 }
 
 .academy-logo {
@@ -379,46 +415,3 @@ footer {
 .calendar:active {
 	fill: #81b3d2;
 }
-
-/*Сетки*/
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.main-points-of-menu {
-	display: flex;
-}
-
-.features-list {
-	display: flex;
-	margin-top: 56px;
-}
-
-footer {
-	display: flex;
-	padding: 37px 73px;
-}
-
-.hashtag {
-	width: 240px;
-}
-
-.footer-social {
-	width: 400px;
-	margin-left: 88px;
-}
-
-.footer-copyright {
-	width: 241px;
-	margin-left: auto;
-}
-
-.main-container-img {
-	margin-bottom: 61px;
-}
-/**/
-
-/*Helper*/
-
-/**/
