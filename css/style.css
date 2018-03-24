@@ -16,6 +16,22 @@ a {
 
 img {
 	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -25,6 +41,13 @@ img {
 
 .main-header {
 	background-color: #ffffff;
+}
+
+.main-header-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -69px;
+	z-index: 1;
 }
 
 .main-header a {
@@ -38,7 +61,24 @@ img {
 }
 
 .main-points-of-menu {
+	position: absolute;
 	display: flex;
+	flex-wrap: wrap;
+	width: 1200px;
+	background-color: #fff;
+}
+
+.main-points-of-menu a {
+	display: block;
+	box-sizing: border-box;
+	width: 239px;
+	padding: 15px 37px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.main-points-of-menu li:nth-child(3) {
+	margin-left: auto;
 }
 
 .main-points-of-menu a:hover {
@@ -54,7 +94,7 @@ img {
 } 
 
 .main-container-img {
-	margin-bottom: 61px;
+	margin-bottom: 60px;
 	width: 1200px;
 	height: 564px;
 	background-size: 1200px 57px, cover;
@@ -65,7 +105,7 @@ img {
 }
 
 .main-container-img img {
-	padding-top: 131px;
+	padding-top: 132px;
 	padding-left: 371px;
 }
 
@@ -108,8 +148,11 @@ img {
 }
 
 .features .title {
+	display: block;
+	margin: 0 auto;
 	font-size: 21px;
 	line-height: 26px;
+
 }
 
 .features-list h2,
