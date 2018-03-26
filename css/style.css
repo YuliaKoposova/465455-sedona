@@ -10,7 +10,6 @@ body {
   color: #000000;
 
   background-color: #f2f2f2;
-  box-shadow: 5px 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -38,10 +37,13 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+	position: relative;
+
 	width: 1200px;
 	margin: 0 auto;
 
 	background-color: #fff;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
 }
 /*_______Шапка сайта________*/
 .main-header {
@@ -308,12 +310,12 @@ input[type="radio"].visually-hidden {
 	transform: translateY(-2px);
 }
 
-.center:nth-child(1) {
+.center:nth-of-type(1) {
 	margin-left: 63px;
 	margin-right: 35px;
 }
 
-.center:nth-child(2) {
+.center:nth-of-type(3) {
 	margin-left: 48px;
 	margin-right: 48px;
 }
@@ -384,7 +386,7 @@ input[type="radio"].visually-hidden {
 
 	display: inline-block;
 	align-self: flex-end;
-	padding: 5.5px 33.5px;
+	padding: 5px 34px;
 
 	text-transform: uppercase;
 	font-size: 14px;
@@ -431,7 +433,6 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	margin-top: 56px;
 
 	list-style: none;
 }
@@ -456,11 +457,6 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 21px;
 }
 
-.features-list .main-list-p {
-	margin: 0;
-	padding-top: 19px;
-}
-
 .feature-container {
 	display: flex;
 }
@@ -470,10 +466,15 @@ input[type="radio"].visually-hidden {
 	min-height: 256px;
 	box-sizing: border-box;
 	padding-top: 40px;
-	padding-left: 57px;
-	padding-right: 57px;
+	padding-left: 49px;
+	padding-right: 49px;
 	
 	text-align: center;
+}
+
+.features-list .main-list-p {
+	margin: 0;
+	padding-top: 19px;
 }
 
 .blue-feature {
@@ -498,6 +499,10 @@ input[type="radio"].visually-hidden {
 	color: #333;
 
 	background-color: #eee;
+}
+
+.white-feature h2 {
+	padding-top: 2px;
 }
 
 .common {
@@ -598,7 +603,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 450px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 24px;
 
 	text-align: center;
 	font-size: 14px;
@@ -610,7 +615,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 568px;
 	margin: 0 auto;
-	margin-top: 50px; 
+	margin-top: 47px; 
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
@@ -691,7 +696,7 @@ input[type="radio"].visually-hidden {
 .high {
 	margin-left: auto;
 
-	border-width: 0px 5.5px 10px 5.5px;
+	border-width: 0px 5px 10px 6px;
 	border-color: #cacaca;
 	border-style: solid;
 	border-left-color: transparent;
@@ -702,7 +707,7 @@ input[type="radio"].visually-hidden {
 	margin-right: 73px;
 	margin-left: 12px;
 
-	border-width: 10px 5.5px 0px 5.5px;
+	border-width: 10px 5px 0px 6px;
 	border-color: #cacaca;
 	border-style: solid;
 	border-left-color: transparent;
@@ -749,10 +754,6 @@ input[type="radio"].visually-hidden {
 	padding-right: 73px;
 
 	border-top: 1px solid #e5e5e5;
-}
-
-.response-main > li:last-of-type {
-	margin-bottom: 120px;
 }
 
 .response-main img {
@@ -821,8 +822,8 @@ input[type="radio"].visually-hidden {
 
 .rating-stars {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -2px;
+	right: -2px;
 
 	display: inline-block;
 	height: 18px;
@@ -846,7 +847,7 @@ input[type="radio"].visually-hidden {
 .detailed {
 	display: inline-block;
 	margin-top: -1px;
-	padding: 3.5px 17px;
+	padding: 3px 17px;
 
 	font-size: 14px;
 	line-height: 21px;
@@ -869,7 +870,7 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 	margin-left: auto;
 	margin-top: -1px;
-	padding: 3.5px 17px;
+	padding: 3px 17px;
 
 	font-size: 14px;
 	line-height: 21px;
@@ -894,7 +895,7 @@ input[type="radio"].visually-hidden {
 	bottom: -15px;
 
 	display: inline-block;
-	padding: 3.5px 13px 3.5px 15px;
+	padding: 3px 13px 3px 15px;
 
 	font-size: 14px;
 	line-height: 21px;
@@ -906,14 +907,19 @@ input[type="radio"].visually-hidden {
 /**************Отели на странице отелей**********/
 /*_________Подвал сайта_________*/
 footer {
-	position: absolute;
-	
-
 	display: flex;
 	align-items: center;
+	box-sizing: border-box;
+	width: 1200px;
 	padding: 37px 73px;
 
 	background-color: rgba(254, 254, 254, 0.9);
+}
+
+.cover {
+	position: absolute;
+	bottom: 7px;
+	left: 0;
 }
 
 .hashtag {
@@ -987,9 +993,11 @@ footer {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
-	padding-left: 17px;
 	width: 241px;
+	margin: 0;
 	margin-left: auto;
+	padding-left: 17px;
+
 	font-weight: 400;
 }
 
@@ -997,6 +1005,7 @@ footer {
 	display: block;
 	padding-top: 1px;
 	padding-left: 8px;
+
 	fill: #000;
 }
 
@@ -1011,20 +1020,21 @@ footer {
 /*_______Окно формы__________*/
 .modal {
 	position: absolute;
-	left: 315px;
+	left: 316px;
 
 	display: block;
 	box-sizing: border-box;
-	width: 570px;
-	padding: 46px 55px;
+	width: 568px;
+	padding: 55px 55px 55px 56px;
 
 	background-color: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hotels-searching-date {
 	display: flex;
 	flex-wrap: wrap;
-	width: 460px;
+	
 }
 
 .hotels-searching-date p {
@@ -1033,18 +1043,13 @@ footer {
 	display: flex;
 	align-items: center;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 }
 
-.hotels-searching-date p:nth-child(1),
-.hotels-searching-date p:nth-child(2),
+.hotels-searching-date > p:nth-child(1),
+.hotels-searching-date > p:nth-child(2),
 .search-button {
 	width: 100%;
-}
-
-.adults,
-.children {
-	width: 230px;
 }
 
 .hotels-searching-date label {
@@ -1075,24 +1080,25 @@ footer {
 	background-color: #fff;
 }
 
+.modal input[type="text"]::placeholder {
+	font-weight: 700;
+	color: #000;
+}
+
 .arrival-date,
 .departure-date {
 	box-sizing: border-box;
 	width: 346px;
 	margin-right: 0px;
-	padding: 13px;
+	padding: 11px;
+	padding-left: 13px;
 }
 
-.arrival-date + .calendar {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
+.arrival-date + .calendar,
 .departure-date + .calendar {
 	position: absolute;
-	right: 10px;
-	top: 10px;
+	right: 9px;
+	top: 8px;
 }
 
 .calendar {
@@ -1107,30 +1113,47 @@ footer {
 	fill: #81b3d2;
 }
 
+.count {
+	display: flex;
+	width: 100%;
+}
+
+.count .adults {
+	display: inline-flex;
+	width: 224px; 
+	margin-top: 1px;
+}
+
+.count .children {
+	display: inline-flex;
+	width: 224px;
+	margin-left: auto;
+}
+
 .adult-amount,
 .children-amount {
 	box-sizing: border-box;
-	width: 115px;
-	padding: 13px;
+	width: 76px;
+	margin-left: auto;
+	padding: 12px 0 10px 15px;
 }
 
-.modal .adult-amount:hover,
-.modal .children-amount:hover {
+.count input[type="text"]:hover {
 	background-color: #f2f2f2;
 }
 
 
 .children label {
-	padding-left: 50px;
+	padding-left: 45px;
 }
 
 .adult-minus,
 .child-minus {
 	position: absolute;
-	left: 115px;
+	left: 110px;
 
-	width: 40px;
-	height: 40px;
+	width: 38px;
+	height: 38px;
 
 	border: none;
 	background-color: #f2f2f2;
@@ -1154,8 +1177,8 @@ footer {
 	position: absolute;
 	right: 0px;
 
-	width: 40px;
-	height: 40px;
+	width: 38px;
+	height: 38px;
 
 	border: none;
 	background-color: #f2f2f2;
@@ -1208,7 +1231,7 @@ footer {
 }
 
 .search-button {
-	margin-top: 24px;
+	margin-top: 25px;
 	padding-top: 17px;
 	padding-bottom: 17px;
 
