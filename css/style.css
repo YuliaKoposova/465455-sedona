@@ -161,6 +161,8 @@ input[type="radio"].visually-hidden {
 
 .request legend,
 .day-value-form p {
+	margin-bottom: 5px;
+
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -189,23 +191,26 @@ input[type="radio"].visually-hidden {
 }
 
 .infrastructure label {
-	margin-top: 10px;
+	margin-top: 15px;
 	padding-left: 10px;
+	vertical-align: middle;
 }
 
 .infrastructure label::before {
 	content: "";
 	position: relative;
-	top: 10px;
+	top: 0px;
 	right: 14px;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 30px;
 	height: 30px;
 
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
 }
 
 .infrastructure input:checked + label::before {
@@ -227,23 +232,25 @@ input[type="radio"].visually-hidden {
 }
 
 .type-of-accomodation label {
-	margin-top: 10px;
+	margin-top: 15px;
 	padding-left: 10px;
 }
 
 .type-of-accomodation label::before {
 	content: "";
 	position: relative;
-	top: 10px;
+	top: -1px;
 	right: 14px;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 30px;
 	height: 30px;
 
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
 }
 
 .type-of-accomodation input:checked + label::before {
@@ -280,34 +287,32 @@ input[type="radio"].visually-hidden {
 .day-value-form input[type="text"] {
 	width: 30px;
 
-	background-color: transparent;
-	border: none;
-}
-
-.day-value-form ::placeholder {
 	font-size: 14px;
 	color: #fff;
+
+	background-color: transparent;
+	border: none;
+	outline: 0;
 }
 
 .day-value {
 	width: 314px;
 	height: 32px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 
 	border: 2px solid #fff;
 	border-radius: 2px;
-
-	transform: translateY(-5px);
 }
 
 .center {
 	display: inline-block;
+	vertical-align: middle;
 	width: 54px;
 	margin-top: 0;
 	margin-bottom: 0;
 
 	text-align: center;
-
-	transform: translateY(-2px);
 }
 
 .center:nth-of-type(1) {
@@ -322,12 +327,11 @@ input[type="radio"].visually-hidden {
 
 .vertical-line {
 	display: inline-block;
+	vertical-align: middle;
 	width: 0;
 	height: 20px;
 
 	border: 1px solid #fff;
-
-	transform: translateY(4px);
 }
 
 .bar-on {
@@ -345,6 +349,7 @@ input[type="radio"].visually-hidden {
 	left: -3px;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 20px;
 	height: 22px;
 
@@ -367,6 +372,7 @@ input[type="radio"].visually-hidden {
 	left: 180px;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 20px;
 	height: 22px;
 
@@ -381,10 +387,11 @@ input[type="radio"].visually-hidden {
 
 .searching-detailed {
 	position: relative;
-	top: -2px;
+	top: -7px;
 	left: 72px;
 
 	display: inline-block;
+	vertical-align: bottom;
 	align-self: flex-end;
 	padding: 5px 34px;
 
@@ -396,6 +403,7 @@ input[type="radio"].visually-hidden {
 	background-color: transparent;
 	border: #fff solid 2px;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .searching-detailed:hover {
@@ -453,8 +461,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list h2 {
+	width: 151px;
+	margin: 0 auto;
 	padding-top: 7px;
 	padding-bottom: 21px;
+
+	text-align: center;
 }
 
 .feature-container {
@@ -488,8 +500,9 @@ input[type="radio"].visually-hidden {
 	background-color: #81b3d2;
 }
 
-.white-feature {
+.grey-feature {
 	display: inline-block;
+	vertical-align: middle;
 	width: 400px;
 	min-height: 256px;
 	box-sizing: border-box;
@@ -501,7 +514,7 @@ input[type="radio"].visually-hidden {
 	background-color: #eee;
 }
 
-.white-feature h2 {
+.grey-feature h2 {
 	padding-top: 2px;
 }
 
@@ -520,6 +533,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	display: inline-block;
+	vertical-align: middle;
 	width: 400px;
 	box-sizing: border-box;
 	margin: 0;
@@ -648,6 +662,7 @@ input[type="radio"].visually-hidden {
 
 .response-header b {
 	display: inline-block;
+	vertical-align: middle;
 	padding-right: 48px;
 
 	font-size: 21px;
@@ -657,6 +672,7 @@ input[type="radio"].visually-hidden {
 .response-header a,
 .response-header p {
 	display: inline-block;
+	vertical-align: middle;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -781,6 +797,7 @@ input[type="radio"].visually-hidden {
 
 .response-main h2 {
 	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: -7px;
 	margin-top: -5px;
 	padding-right: 30px;
@@ -792,7 +809,8 @@ input[type="radio"].visually-hidden {
 .response-main .type,
 .response-main span {
 	display: inline-block;
-	
+	vertical-align: middle;
+
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -826,6 +844,7 @@ input[type="radio"].visually-hidden {
 	right: -2px;
 
 	display: inline-block;
+	vertical-align: middle;
 	height: 18px;
 	margin: 0;
 	padding: 0;
@@ -835,6 +854,7 @@ input[type="radio"].visually-hidden {
 
 .rating-stars li {
 	display: inline-block;
+	vertical-align: top;
 	width: 18px;
 	height: 17px;
 	padding-left: 2px;
@@ -846,6 +866,7 @@ input[type="radio"].visually-hidden {
 
 .detailed {
 	display: inline-block;
+	vertical-align: middle;
 	margin-top: -1px;
 	padding: 3px 17px;
 
@@ -868,6 +889,7 @@ input[type="radio"].visually-hidden {
 
 .book {
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: auto;
 	margin-top: -1px;
 	padding: 3px 17px;
@@ -895,6 +917,7 @@ input[type="radio"].visually-hidden {
 	bottom: -15px;
 
 	display: inline-block;
+	vertical-align: middle;
 	padding: 3px 13px 3px 15px;
 
 	font-size: 14px;
@@ -911,7 +934,7 @@ footer {
 	align-items: center;
 	box-sizing: border-box;
 	width: 1200px;
-	padding: 37px 73px;
+	padding: 37px 0;
 
 	background-color: rgba(254, 254, 254, 0.9);
 }
@@ -924,10 +947,11 @@ footer {
 
 .hashtag {
 	display: inline-block;
-	width: 240px;
+	vertical-align: middle;
+	width: 400px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0px 45px 0px 60px;
+	padding: 0px 132px 0px 132px;
 
 	font-size: 21px;
 	font-weight: 700;
@@ -938,10 +962,10 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 150px;
+	width: 400px;
+	box-sizing: border-box;
 	margin: 0;
-	margin-left: 211px;
-	padding: 0;
+	padding: 0 125px;
 	
 	list-style-type: none;
 }
@@ -949,6 +973,7 @@ footer {
 .footer-social li,
 .footer-social a {
 	display: inline-block;
+	vertical-align: middle;
 	width: 46px;
 	height: 48px;
 }
@@ -993,10 +1018,9 @@ footer {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
-	width: 241px;
+	width: 400px;
 	margin: 0;
-	margin-left: auto;
-	padding-left: 17px;
+	padding: 0 100px 0 102px;
 
 	font-weight: 400;
 }
@@ -1028,7 +1052,7 @@ footer {
 	padding: 55px 55px 55px 56px;
 
 	background-color: #fff;
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hotels-searching-date {
@@ -1054,6 +1078,7 @@ footer {
 
 .hotels-searching-date label {
 	display: inline-block;
+	vertical-align: middle;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -1067,6 +1092,9 @@ footer {
 	margin-left: auto;
 	border: none;
 
+	font-weight: 700;
+	color: #000;
+
 	background-color: #f2f2f2;
 }
 
@@ -1078,11 +1106,6 @@ footer {
 	outline: #e5e5e5 solid 2px;
 
 	background-color: #fff;
-}
-
-.modal input[type="text"]::placeholder {
-	font-weight: 700;
-	color: #000;
 }
 
 .arrival-date,
@@ -1102,7 +1125,7 @@ footer {
 }
 
 .calendar {
-	fill: #cacaca;
+	fill: #a9a9a9;
 }
 
 .calendar:hover {
@@ -1142,6 +1165,10 @@ footer {
 	background-color: #f2f2f2;
 }
 
+.count input[type="text"]:focus,
+.count input[type="text"]:active {
+	background-color: #f2f2f2;
+}
 
 .children label {
 	padding-left: 45px;
@@ -1154,9 +1181,12 @@ footer {
 
 	width: 38px;
 	height: 38px;
+	padding: 0;
 
 	border: none;
 	background-color: #f2f2f2;
+	cursor: pointer;
+	outline: 0;
 }
 
 .adult-minus::before,
@@ -1179,9 +1209,12 @@ footer {
 
 	width: 38px;
 	height: 38px;
+	padding: 0;
 
 	border: none;
 	background-color: #f2f2f2;
+	cursor: pointer;
+	outline: 0;
 }
 
 .adult-plus::before,
@@ -1242,6 +1275,7 @@ footer {
 
 	background-color: #81b3d2;
 	border: none;
+	cursor: pointer;
 }
 
 .search-button:hover {
