@@ -64,6 +64,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
+	align-items: center;
+	min-height: 56px;
 	width: 1200px;
 	margin: 0;
 	padding: 0;
@@ -108,8 +110,6 @@ input[type="radio"].visually-hidden {
 	display: block;
 	box-sizing: border-box;
 	width: 240px;
-	padding-top: 15px;
-	padding-bottom: 15px;
 	vertical-align: middle;
 
 	color: #000;
@@ -124,7 +124,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.menu-chosen {
+.main-points-of-menu .menu-chosen {
 	color: #766357;
 } 
 /********Шапка сайта*********/
@@ -950,8 +950,9 @@ footer {
 	vertical-align: middle;
 	width: 400px;
 	box-sizing: border-box;
+	text-align: center;
 	margin: 0;
-	padding: 0px 132px 0px 132px;
+	padding: 0px 12px 0px 12px;
 
 	font-size: 21px;
 	font-weight: 700;
@@ -965,7 +966,7 @@ footer {
 	width: 400px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0 125px;
+	padding: 0 5px;
 	
 	list-style-type: none;
 }
@@ -979,6 +980,9 @@ footer {
 }
 
 .footer-social li {
+	margin-right: 3px;
+	margin-left: 3px;
+
 	background-color: #81b3d2;
 }
 
@@ -1002,6 +1006,16 @@ footer {
 	background-size: 20px 16px;
 }
 
+.footer-social li:first-of-type {
+	margin-left: auto;
+	margin-right: 3px;
+}
+
+.footer-social li:last-of-type {
+	margin-right: auto;
+	margin-left: 3px;
+}
+
 .footer-social li:hover {
 	background-color: #669ec0;
 }
@@ -1020,9 +1034,17 @@ footer {
 	box-sizing: border-box;
 	width: 400px;
 	margin: 0;
-	padding: 0 100px 0 102px;
+	padding: 0 10px 0 12px;
 
 	font-weight: 400;
+}
+
+.copyright {
+	margin-left: auto;
+}
+
+.logo-html {
+	margin-right: auto;
 }
 
 .academy-logo {
