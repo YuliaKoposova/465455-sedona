@@ -331,6 +331,7 @@ input[type="radio"].visually-hidden {
 }
 
 .day-value {
+	position: relative;
 	width: 314px;
 	height: 32px;
 	margin-top: 10px;
@@ -355,18 +356,28 @@ input[type="radio"].visually-hidden {
 	margin-right: 35px;
 }
 
-.center:nth-of-type(3) {
+.center:nth-of-type(2) {
 	margin-left: 48px;
 	margin-right: 48px;
 }
 
-.vertical-line {
+.center:nth-of-type(1)::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+  left: 150px;
+
 	display: inline-block;
 	vertical-align: middle;
 	width: 0;
 	height: 20px;
 
 	border: 1px solid #fff;
+}
+
+.indicator {
+	position: relative;
+	width: 318px;
 }
 
 .bar-on {
@@ -381,19 +392,8 @@ input[type="radio"].visually-hidden {
 	        transform: translateY(14px);
 }
 
-.bar-on::before {
-	content: "";
+.left-pin {
 	position: absolute;
-	top: -10px;
-	left: -3px;
-
-	display: inline-block;
-	vertical-align: middle;
-	width: 20px;
-	height: 22px;
-
-	background-image: url("../img/filter-button.svg");
-	background-repeat: no-repeat;
 }
 
 .bar-off {
@@ -408,23 +408,28 @@ input[type="radio"].visually-hidden {
 	        transform: translateY(12px) translateX(70px);
 }
 
-.bar-off::before {
-	content: "";
+.right-pin {
 	position: absolute;
-	top: -10px;
-	left: 180px;
+	left: 250px;
+}
 
+.left-pin,
+.right-pin {
 	display: inline-block;
 	vertical-align: middle;
-	width: 20px;
+	width: 21px;
 	height: 22px;
 
 	background-image: url("../img/filter-button.svg");
 	background-repeat: no-repeat;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
 }
 
-.bar-on:hover::before,
-.bar-off:hover::before {
+.left-pin:hover, 
+.right-pin:hover {
 	-webkit-transform: scale(1.1);
 	    -ms-transform: scale(1.1);
 	        transform: scale(1.1);
