@@ -349,7 +349,7 @@ input[type="radio"].visually-hidden {
 .center {
 	display: inline-block;
 	vertical-align: middle;
-	width: 55px;
+	width: 58px;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -370,7 +370,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	position: absolute;
 	top: 5px;
-  left: 150px;
+  left: 155px;
 
 	display: inline-block;
 	vertical-align: middle;
@@ -748,7 +748,7 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 15px;
 	font-weight: 400;
 }
 
