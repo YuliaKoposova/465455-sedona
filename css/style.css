@@ -85,6 +85,10 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
+.main-points-of-menu li {
+	width: 240px;
+}
+
 .main-points-of-menu li:nth-child(3) {
 	margin-left: auto;
 }
@@ -115,11 +119,10 @@ input[type="radio"].visually-hidden {
 }
 
 .main-points-of-menu a {
-	display: block;
+	display: inline-block;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	width: 240px;
-	vertical-align: middle;
+	vertical-align: top;
 
 	font-size: 14px;
   line-height: 26px;
@@ -211,6 +214,7 @@ input[type="radio"].visually-hidden {
 }
 
 .infrastructure label {
+	display: block;
 	margin-top: 15px;
 	padding-left: 10px;
 	vertical-align: middle;
@@ -257,6 +261,7 @@ input[type="radio"].visually-hidden {
 }
 
 .type-of-accomodation label {
+	display: block;
 	margin-top: 15px;
 	padding-left: 10px;
 }
@@ -320,7 +325,7 @@ input[type="radio"].visually-hidden {
 }
 
 .day-value-form input[type="text"] {
-	width: 30px;
+	width: 32px;
 
 	font-size: 14px;
 	color: #fff;
