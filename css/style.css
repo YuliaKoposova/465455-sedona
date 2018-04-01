@@ -165,7 +165,7 @@ input[type="radio"].visually-hidden {
 /*_________Форма на странице отелей_________*/
 .request {
 	width: 1200px;
-	height: 274px;
+	min-height: 273px;
 
 	color: #fff;
 
@@ -194,6 +194,7 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 	display: flex;
 	padding-top: 84px;
+	padding-bottom: 25px;
 }
 
 .infrastructure {
@@ -215,7 +216,7 @@ input[type="radio"].visually-hidden {
 
 .infrastructure label {
 	display: block;
-	margin-top: 15px;
+	margin-top: 16px;
 	padding-left: 10px;
 	vertical-align: middle;
 }
@@ -223,7 +224,7 @@ input[type="radio"].visually-hidden {
 .infrastructure label::before {
 	content: "";
 	position: relative;
-	top: 0px;
+	top: -2px;
 	right: 14px;
 
 	display: inline-block;
@@ -235,6 +236,10 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+}
+
+.infrastructure input[type="checkbox"]:focus + label::before {
+	outline: 2px solid blue;
 }
 
 .infrastructure input:checked + label::before {
@@ -262,14 +267,14 @@ input[type="radio"].visually-hidden {
 
 .type-of-accomodation label {
 	display: block;
-	margin-top: 15px;
+	margin-top: 16px;
 	padding-left: 10px;
 }
 
 .type-of-accomodation label::before {
 	content: "";
 	position: relative;
-	top: -1px;
+	top: -2px;
 	right: 14px;
 
 	display: inline-block;
@@ -281,6 +286,10 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+}
+
+.type-of-accomodation input[type="checkbox"]:focus + label::before {
+	outline: 2px solid blue;
 }
 
 .type-of-accomodation input:checked + label::before {
@@ -332,7 +341,6 @@ input[type="radio"].visually-hidden {
 
 	background-color: transparent;
 	border: none;
-	outline: 0;
 }
 
 .day-value {
@@ -429,7 +437,6 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 50%;
-	outline: none;
 	cursor: pointer;
 }
 
@@ -730,7 +737,7 @@ input[type="radio"].visually-hidden {
 	        align-items: center;
 	margin-left: 73px;
 	padding-top: 24px;
-	padding-bottom: 20px;
+	padding-bottom: 23px;
 }
 
 .response-header b {
@@ -780,6 +787,7 @@ input[type="radio"].visually-hidden {
 
 .sort:active {
 	color: #000;
+	border: none;
 }
 
 .high {
@@ -836,28 +844,15 @@ input[type="radio"].visually-hidden {
 }
 
 .response-main > li {
-	display: block;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 72px;
-	padding-right: 73px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 30px 70px 30px 72px;
 
 	border-top: 1px solid #e5e5e5;
 }
 
-.response-main img {
-	position: absolute;
-}
-
-.block {
-	position: relative;
-
-	display: block;
-	width: 890px;
-	margin-left: 166px;
-}
-
-.mini-block {
+.hotel-info {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -867,6 +862,23 @@ input[type="radio"].visually-hidden {
 	    -ms-flex-align: center;
 	        align-items: center;
 	width: 260px;
+	margin-left: 30px;
+}
+
+.rating {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-left: auto;
 }
 
 .response-main > li:last-of-type {
@@ -917,15 +929,12 @@ input[type="radio"].visually-hidden {
 }
 
 .rating-stars {
-	position: absolute;
-	top: -2px;
-	right: -2px;
-
 	display: inline-block;
 	vertical-align: middle;
 	height: 18px;
 	margin: 0;
 	padding: 0;
+	margin-left: auto;
 
 	list-style: none;
 } 
@@ -989,13 +998,10 @@ input[type="radio"].visually-hidden {
 	background-color: #503e33;
 }
 
-.rating {
-	position: absolute;
-	right: 0;
-	bottom: -15px;
-
+.rating-value {
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0;
 	padding: 3px 13px 3px 15px;
 
 	font-size: 14px;
@@ -1325,7 +1331,6 @@ footer {
 	border: none;
 	background-color: #f2f2f2;
 	cursor: pointer;
-	outline: 0;
 }
 
 .adult-minus::before,
@@ -1355,7 +1360,6 @@ footer {
 	border: none;
 	background-color: #f2f2f2;
 	cursor: pointer;
-	outline: 0;
 }
 
 .adult-plus::before,
